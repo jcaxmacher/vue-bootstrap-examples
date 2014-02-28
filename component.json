@@ -1,0 +1,13 @@
+{
+  "name": "vue-bootstrap-examples",
+  "repo": "obsoleter/vue-bootstrap-examples",
+  "description": "Example usage of vue-bootstrap-* components",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "obsoleter/vue-bootstrap-alert": "*",
+    "yyx990803/vue": "*"
+  },
+  "development": {},
+  "license": "MIT"
+}

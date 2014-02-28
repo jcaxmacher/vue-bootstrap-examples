@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>test</title>
+<link rel="stylesheet" href="build/build.css">
+</head>
+<body>
+<div id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="alerts">
+            <alert v-repeat="alerts">{{{text}}}</alert>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="build/build.js"></script>
+<script type="text/javascript">
+var Vue = require('vue');
+Vue.component('alert', require('vue-bootstrap-alert').extend({replace:false}));
+
+  new Vue({
+      el: 'body',
+      data: {
+          alerts: [{
+              text: 'Something went wrong',
+              type: 'danger',
+              closeable: true
+          },{
+              text: 'Something went right',
+              type: 'success',
+              closeable: true
+          },{
+              text: 'Something might be wrong',
+              type: 'warning',
+              closeable: true
+          },{
+              text: 'This will disappear',
+              type: 'warning',
+              closeable: true,
+              timeout: 3000
+          }]
+      }
+  });
+</script>
+</body>
