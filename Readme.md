@@ -1,17 +1,21 @@
 
-# newtest
+# vue-bootstrap-examples
 
-  asdf
+  Example usage of `vue-bootstrap-*` components
 
 ## Installation
 
-  Install with [component(1)](http://component.io):
+  Clone this repository:
 
-    $ component install obsoleter/newtest
+    $ git clone https://github.com/obsoleter/vue-bootstrap-examples.git
 
-## API
+  The `component build` command has already been run, so the build files are present.
 
+  Run an HTTP server from the repository/project directory, like so:
 
+    $ python -m SimpleHTTPServer 8080
+
+  Then, access `http://localhost:8080` from a web browser to view the examples.
 
 ## License
 
